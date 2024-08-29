@@ -19,9 +19,6 @@
   --text-span: 600 14px/145% var(--font-family);
   --text: 400 16px/140% var(--font-family);
   --text-sm: 400 14px/160% var(--font-family);
-
-
-  
 }
 
 .container {
@@ -31,8 +28,15 @@
 }
 
 main {
-  margin-top: 40px;
+  margin-block: 40px;
   gap: 80px;
+  column-gap: 32px;
+  grid-template-columns: 2fr 1.4fr;
+
+  grid-template-areas:
+  "featured featured"
+  "weekly weekly"
+  "ai aside";
 }
 
 body {  
